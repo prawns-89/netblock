@@ -1,0 +1,22 @@
+{
+  "name": "netblock",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Transactional, authenticated connectivity-lockdown system for explicitly paired, owner-authorized phones.",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "test": "node --test --experimental-strip-types 'tests/*.test.ts'",
+    "test:verbose": "node --test --test-reporter=spec --experimental-strip-types 'tests/*.test.ts'",
+    "typecheck": "tsc --noEmit",
+    "controller": "node --experimental-strip-types src/controller/cli.ts",
+    "daemon": "node --experimental-strip-types src/device/main.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

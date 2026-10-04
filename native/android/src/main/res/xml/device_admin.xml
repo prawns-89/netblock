@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The admin policies this app uses. Deliberately minimal: no wipe-data, no
+  password policy, no camera disabling, no encrypted-storage policy. Only the
+  ability to set and clear the user restrictions NetBlockPolicy authors.
+-->
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-policies>
+        <disable-keyguard-features />
+    </uses-policies>
+</device-admin>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NetBlock</string>
+    <!-- Deliberately plain. No countdown, no state, nothing that signals a
+         lockdown is in progress; the OS requires a notification, not a status. -->
+    <string name="channel_name">Service status</string>
+    <string name="service_running">NetBlock</string>
+</resources>
